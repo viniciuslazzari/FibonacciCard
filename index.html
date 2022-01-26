@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Fibonacci Card</title>
+        <link rel="stylesheet" href="styles.css">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="index.js"></script>
+        
+        <div class="card" id="fibonacciCard">
+            <div class="codeWrapper">
+                <div class="code">
+                    <label><span class="keyword">#include &#60stdio.h&#62</span></label>
+                    <br>
+                    <label><span class="type">int </span><span class="keyword">fib</span>(<span class="type">int</span> <span class="keyword">n</span>)</label>
+                    <label>{</label>
+                    <label style="margin-left: 2rem;"><span class="reserved">if</span> (<span class="number">1</span> <span class="type"><=</span> <span class="keyword">n</span>)</label>   
+                    <label style="margin-left: 4rem;"><span class="reserved">return</span> <span class="keyword">n</span>;</label>   
+                    <br>
+                    <label style="margin-left: 2rem;"><span class="reserved">return</span> 
+                        (<span class="keyword">fib</span>(<span class="keyword">n</span> <span class="type">-</span> <span class="number">1</span>) 
+                        <span class="type">+</span> 
+                        <span class="keyword">fib</span>(<span class="keyword">n</span> <span class="type">-</span> <span class="number">2</span>));</label>   
+                    <label>}</label>
+                </div>
+            </div>
+
+            <div class="contentWrapper">
+                <div class="content">
+                    <div class="content-left">
+                        <p><strong>FRIDAY NIGHT</strong></p>
+                        <h2>FIBONACCI ALGO</h1>
+                        <p><strong>ARTIST'S NOTES:</strong></p>
+                        <p><strong>O(2^n)</strong></p>
+                        <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit magna sit amet mattis lobortis. Sed eget malesuada nisi.
+                        </p>
+                    </div>
+                    <div class="content-right">
+                        <p><strong>DAY</strong></p>
+                        <h1>25.01.2022</h1>
+                        <img src="qr_code.png" alt="qr code"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
